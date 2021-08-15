@@ -16,6 +16,8 @@ params:
       url: about/
     - name: Get in touch
       url: contact/
+    - name: My Cool Blog Posts
+      url: post/
   sidebarAbout:
     - This is the Portfolio of Works created by my students.
     - We are the Foundation Students of 2021-2021 at SMI, MAHE, Bangalore, India.

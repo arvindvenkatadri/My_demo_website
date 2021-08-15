@@ -1,0 +1,38 @@
+---
+title: My Second Year Commencement
+author: Arvind Venkatadri
+date: '2021-08-15'
+slug: []
+categories:
+  - R
+  - tidygraph ggraph ggforce
+tags: []
+image: 2.jpg
+showonlyimage: true
+---
+# Introduction
+My second year began with a bang! Here is the picture of me doing some funky stuff:
+
+<!--more-->
+
+![](2.jpg)
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(tidygraph)
+library(ggraph)
+library(igraph)
+library(igraphdata)
+```
+
+```{r}
+data(karate)
+karate
+
+karate %>% ggraph(., layout = "graphopt") + 
+  geom_edge_link0(aes(width = weight)) +
+  geom_node_point(aes(color = color), size = 6)
+
+```
+
